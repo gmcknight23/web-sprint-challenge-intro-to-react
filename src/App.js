@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./App.css";
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
     axios
       .get("https://swapi.dev/api/people")
       .then((res) => {
-        setUsers(res.data.results);
+        console.log(res.data);
+        setCharacters(res.data);
       })
       .catch((err) => console.error(err));
   }, []);
