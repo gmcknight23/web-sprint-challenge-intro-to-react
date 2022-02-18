@@ -2,7 +2,20 @@
 import React from "react";
 
 const Character = (props) => {
-  return <div>hello</div>;
+  console.log(props);
+
+  const { ch } = props;
+
+  return (
+    <div className="accordian" key={ch.name}>
+      <div className="header-div">
+        <h1>{ch.name}</h1>
+      </div>
+      <div className="arrow-container">
+        <div className="arrow">▽</div>
+      </div>
+    </div>
+  );
   //     <button onClick={() => action(props.id)}>See details</button>
   //
   //

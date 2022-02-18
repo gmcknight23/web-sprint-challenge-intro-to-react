@@ -19,11 +19,12 @@
   background: rgba(83, 116, 130, 0.742);
   display: flex;
   justify-content: center;
+  margin-bottom: 7px;
 }
 .arrow-container {
   display: flex;
   align-items: flex-end;
-  max-width: 75%;
+  max-width: 100%;
 }
 .arrow {
   font-size: 50px;
