@@ -2,14 +2,22 @@
 import React from "react";
 
 const Character = (props) => {
-  return (
-    <div>
-      <h2>{props.user.username}</h2>
-      <img src={props.user.picture} />
-      <p>{props.user.email}</p>
-      <p>{props.user.name}</p>
-    </div>
-  );
+  return <div>hello</div>;
+  //     <button onClick={() => action(props.id)}>See details</button>
+  //
+  //
+  //
+  //   return (
+  //     <div>
+  //       <p>{props.name}</p>
+  //       <p>{props.gender}</p>
+  //       <p>{props.height}</p>
+  //       <p>{props.mass}</p>
+  //       <p>{props.birth_year}</p>
+  //       <p>{props.eye_color}</p>
+  //       <p>{props.skin_color}</p>
+  //     </div>details</
+  //   );
 };
 
 export default Character;
