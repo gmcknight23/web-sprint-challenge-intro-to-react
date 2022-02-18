@@ -11,6 +11,7 @@ const App = () => {
   // sync up with, if any.
 
   const [characters, setCharacters] = useState([]);
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     axios("https://swapi.dev/api/people").then((res) => {
@@ -23,9 +24,12 @@ const App = () => {
       <h1 className="Header">STAR WARS Characters</h1>
       {characters.map((ch) => {
         return (
-          <div className="sw-div-container">
-            <div className="sw-char-div">
+          <div className="accordian">
+            <div className="header-div">
               <h1>{ch.name}</h1>
+            </div>
+            <div className="arrow-container">
+              <div className="arrow">▽</div>
             </div>
           </div>
         );

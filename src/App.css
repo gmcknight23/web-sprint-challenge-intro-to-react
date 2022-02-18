@@ -9,18 +9,22 @@
   text-shadow: 1px 1px 5px #fff;
   font-size: 80px;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 /* write your parent styles in here for your App.js */
 
-.sw-char-div {
+.accordian {
   border: 5px solid black;
+  width: 50%;
+  background: rgba(83, 116, 130, 0.742);
+  display: flex;
   justify-content: center;
 }
-
-.sw-div-container {
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  margin: 2px;
-  background: rgba(83, 116, 130, 0.742); /*  40% opaque green */
+.arrow-container {
+  display: flex;
+  align-items: flex-end;
+  max-width: 75%;
+}
+.arrow {
+  font-size: 50px;
 }
